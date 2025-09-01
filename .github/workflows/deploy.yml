@@ -70,7 +70,6 @@ jobs:
           echo "Testing Lambda function..."
           aws lambda invoke \
             --function-name test-hello-world-lambda \
-            --payload '{"queryStringParameters": {"name": "GitHub Actions"}}' \
             response.json
           cat response.json
           echo ""
