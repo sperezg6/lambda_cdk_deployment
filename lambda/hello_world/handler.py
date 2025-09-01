@@ -23,7 +23,7 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
     # Extract name from query parameters if present (for future API Gateway integration)
     name = "World"
 
-    response_message = f"Hello {name} from AWS Lambda using Python 3.11!"
+    response_message = f"Hello {name} from AWS Lambda using Python 3.11! Deployed from GitHub Actions"
 
     return {
         "statusCode": 200,
